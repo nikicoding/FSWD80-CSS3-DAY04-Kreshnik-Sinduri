@@ -1,0 +1,68 @@
+$font-stack: Arial, Helvetica, sans-serif
+$font-size1: 20px
+$font-size2: 14px
+$font-size3: 12px
+$width1: 100%
+$width2: 90%
+$imgwidth: 20%
+$imgwidth2: 70%
+$color1: white
+$color2: black
+$color3: powderblue
+$color4: steelblue
+
+@mixin border-radius ($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
+*
+	border: 1px solid white
+
+
+body 
+	font-style: $font-stack
+	color: $color1
+	width: $width1
+	font-size: $font-size1
+	background-color: $color2
+
+header
+	color: $color3
+
+img
+	width: $imgwidth
+
+.section2
+	color: blue
+	h2
+		font-size: $font-size3
+		color: $color4
+	.tops, .bottoms
+		display: flex
+		width: $width1
+		justify-content: center
+		align-items: center
+		text-align: center
+		border: 10px solid green
+		.topimg, .bottomimg
+			width: 700px / 1000px * 100%
+			justify-content: center
+			align-items: center
+			align-content: center
+			border: 5px solid yellow
+			@include border-radius(50%)
+		p
+			color: $color4
+			width: $width2
+			justify-content: center
+			align-items: center
+			align-content: center
+
+.test
+	color: green
+
+.foot
+	@extend .test
+	border-color: powderblue

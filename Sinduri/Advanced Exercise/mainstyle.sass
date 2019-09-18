@@ -1,0 +1,164 @@
+$font-stack: Arial, Helvetica, sans-serif
+$font-size1: 20px
+$font-size2: 18px
+$font-size3: 12px
+$width1: 100%
+$width2: 90%
+$imgwidth: 20%
+$imgwidth2: 20%
+$color1: white
+$color2: black
+$color3: powderblue
+$color4: steelblue
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi)
+	body
+		margin: 0 auto
+		max-width: 1200px
+		width: 100%		
+	
+
+*
+	margin: 0px
+	padding: 0px
+	// border: 1px solid white
+
+body
+	background-color: $color2
+	width: $width1
+	color: $color1
+
+img
+	width: 100%
+
+header
+	display: flex
+	justify-content: space-around
+	align-items: center
+	padding-top: 10px
+	padding-bottom: 30px
+	border: 2px solid pink
+	margin-bottom: 1%
+	img
+		width: 30%
+		height: 50%
+		border: 2px solid pink
+
+	
+.panimals
+	margin-bottom: 20px
+	h2
+		font-size: $font-size2
+		background-color: white
+		color: black
+	.flex1
+		display: flex
+		// flex-wrap: wrap
+		justify-content: flex-start
+		margin: 5px auto
+		width: 95%
+		// border: 2px solid yellow
+		.fleft
+			// border: 1px solid green
+			display: flex
+			width: 40%
+			align-items: stretch
+									
+			.fleft1, .fleft2
+				width: 50%
+				padding: 5px
+				height: 100%
+				margin: 0 auto
+				display: flex
+				position: relative
+				
+				#left1, #left2
+					align-items: stretch
+					// border: 1px solid red
+
+				#tleft1, #tleft2
+					position: absolute
+					bottom: 10%
+					
+				
+
+					
+					
+		.middle
+			display: flex
+			flex-direction: column	
+			width: 40%
+			align-items: stretch
+			.ftop
+				// border: 1px solid green
+				
+				padding: 5px
+				height: 50%
+				margin: 0 auto
+				display: flex
+				
+				.ftop1, .ftop2
+					// border: 1px solid brown
+					width: 50%
+					padding: 5px
+					align-items: stretch
+					margin: 0 auto
+					position: relative
+					
+					#top1, #top2
+						align-items: stretch
+
+					#ttop1, #ttop2
+						position: absolute
+						bottom: 10%
+					
+
+			
+			.fbottom
+				// border: 1px solid pink
+				display: flex
+				height: 50%
+				align-items: stretch
+				.fbottom1, .fbottom2, .fbottom3
+					// border: 1px solid red
+					width: 33%
+					padding: 5px
+					height: 100%
+					margin: 0 auto
+					position: relative
+				#bottom1, #bottom2, #bottom3
+					align-items: stretch
+				#tbottom1, #tbottom2, #tbottom3
+					position: absolute
+					bottom: 10%
+
+
+		.fright
+			// border: 1px solid green
+			display: flex
+			width: 20%
+			align-items: stretch
+						
+			.right1
+				width: 50%
+				padding: 5px
+				height: 100%
+				margin: 0 auto
+				position: relative
+				#rightimg
+					align-items: stretch
+				#righttext
+					position: absolute
+					bottom: 10%
+
+				
+						
+
+	
+
+footer
+	text-align: center
+	img
+		height: 100px
+		width: auto
+		border-radius: 50%

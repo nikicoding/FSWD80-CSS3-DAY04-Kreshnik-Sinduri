@@ -1,0 +1,52 @@
+* {
+  border: 1px solid white; }
+
+body {
+  font-style: Arial, Helvetica, sans-serif;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  background-color: black; }
+
+header {
+  color: powderblue; }
+
+img {
+  width: 20%; }
+
+.section2 {
+  color: blue; }
+  .section2 h2 {
+    font-size: 12px;
+    color: steelblue; }
+  .section2 .tops, .section2 .bottoms {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 10px solid green; }
+    .section2 .tops .topimg, .section2 .tops .bottomimg, .section2 .bottoms .topimg, .section2 .bottoms .bottomimg {
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      border: 5px solid yellow;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+    .section2 .tops p, .section2 .bottoms p {
+      color: steelblue;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+
+.test, .foot {
+  color: green; }
+
+.foot {
+  border-color: powderblue; }
+
+/*# sourceMappingURL=style1.css.map */
